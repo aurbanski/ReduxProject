@@ -12,7 +12,11 @@ export function postsReducer(state=[], action) {
             const {type, id, ...newPost} = action
             return state.map(
                 (oldPost, index) => {
-                    action.id ==index ? {...oldPost, ...newPost } : oldPost
+                    if(id == index){
+                        return {...oldPost, ...newPost }
+                    } else {
+                        return oldPost
+                    } 
                 }
             )
         }
