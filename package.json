@@ -1,7 +1,7 @@
 {
   "name": "ReduxProject",
   "version": "1.0.0",
-  "main": "src/index.js",
+  
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.1",
@@ -18,5 +18,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack"
+  },
+  "dependencies": {
+    "redux": "^4.0.0"
   }
 }
